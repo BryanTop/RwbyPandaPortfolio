@@ -4,9 +4,11 @@
   "description": "My Portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "nyc ./node_modules/.bin/ava -v",
     "startDev": "nodemon app",
-    "start": "node app"
+    "start": "node app",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "standard": "standard index.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,19 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
+    "gulp": "^4.0.2",
     "mocha": "^7.0.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "ava": "^0.16.0",
+    "co-exec": "^1.0",
+    "codecov": "^1.0.1",
+    "ghooks": "^1.2.4",
+    "nyc": "^10.0.0",
+    "standard": "^8.4.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run standard"
+    }
   }
 }

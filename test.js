@@ -13,7 +13,7 @@ describe('Unit Tests', () => {
                 expect(err).to.be.null;
                 expect(res).to.have.status(200, 'It expects a status code of 200');
                 expect(res.body.users).to.not.be.null;
-                expect(res.body.users).to.be.an('array').that.length.gte(1, 'Expected Users in users array');
+                expect(res.body.users).to.be.an('array').that.length.gte(2, 'Expected Users in users array');
             });
         });
     });

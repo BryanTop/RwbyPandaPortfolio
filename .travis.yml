@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - stable
+script: 
+  - npm test
+after_success:
+  - npm run report-coverage
+deploy:
+  provider: heroku
+  api_key:
+    secure: "dfeddd7c-a223-4f3f-b1d6-9ee8dd15e6d9"
