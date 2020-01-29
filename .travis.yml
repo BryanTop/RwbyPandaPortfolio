@@ -5,10 +5,9 @@ node_js:
 sudo: false
 services:
   - docker
-script: 
-  - npm test
-after_success:
-  - npm run report-coverage
+before_install:
+  - docker build -t bryantop/rwbypandaportfolio .
+  - docker run bryantop/rwbypandaportfolio
 deploy:
   provider: heroku
   api_key:
