@@ -1,19 +1,10 @@
 {
-<<<<<<< HEAD
-  "name": "rwbypandaportfolio",
-  "version": "1.0.0",
-  "description": "The portfolio for Rwby Panda.",
-  "main": "app.js",
-  "scripts": {
-    "test": "mocha test.js",
-=======
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My Portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "nyc ./node_modules/.bin/ava -v",
->>>>>>> 40affa151131ff3ba7b739d6c0050d0dab5369bb
+    "test": "mocha test.js",
     "startDev": "nodemon app",
     "start": "node app",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
