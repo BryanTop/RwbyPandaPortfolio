@@ -23,13 +23,9 @@
     "type": "git",
     "url": "git+https://github.com/RwbyPanda/RwbyPanda.github.io.git"
   },
-<<<<<<< HEAD
-  "keywords": [],
-=======
   "keywords": [
     "portfolio"
   ],
->>>>>>> 40affa151131ff3ba7b739d6c0050d0dab5369bb
   "author": "Bryan Top",
   "license": "ISC",
   "bugs": {
