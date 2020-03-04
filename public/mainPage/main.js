@@ -13,16 +13,13 @@ let projectNameArea = document.getElementsByClassName('projectName');
 let sliderImages;
 
 let projects = [
-    {"name": 'Weight Converter', 'src': './mainPage/images/WeightConverter.png', 'url': './weightConverter/index'},
-    {"name": 'Parallax Website', 'src': './mainPage/images/Parallax.png', 'url': './parallaxWebsite/index'},
-    {"name": 'Full Page Landing Page', 'src': './mainPage/images/FullpageLanding.png', 'url': './landingPage/index'},
-    {"name": 'Calculator', 'src': './mainPage/images/calculator.png', 'url': './calculator/index'},
-    {"name": 'Three Page Website', 'src': './mainPage/images/ThreePageWebsite.png', 'url': './fullThreePageWebsite/index'},
+    {"name": 'Weight Converter', 'src': './mainPage/images/WeightConverter.png', 'url': 'https://rwby-weight-converter.now.sh/'},
+    {"name": 'Parallax Website', 'src': './mainPage/images/Parallax.png', 'url': 'https://rwby-parallax-site.now.sh/'},
+    {"name": 'Full Page Landing Page', 'src': './mainPage/images/FullpageLanding.png', 'url': 'https://rwby-landing-page.now.sh'},
+    {"name": 'Calculator', 'src': './mainPage/images/calculator.png', 'url': 'https://rwbycalculator.now.sh/'},
+    {"name": 'Three Page Website', 'src': './mainPage/images/ThreePageWebsite.png', 'url': 'https://rwby-three-page-website.now.sh'},
     {"name": 'Number Wizard', 'src': './mainPage/images/NWUI.png', 'url': './NWUI/index'},
 ]
-
-
-
 
 TypeWriter.prototype.type = function() {
     const current = this.wordIndex % this.words.length;
