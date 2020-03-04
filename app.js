@@ -16,16 +16,28 @@ app.set('view engine', 'ejs');
 
 
 
+app.get('/users', (req, res) => {
+
+    res.send({
+        users: [
+            {
+                name: 'bryan',
+                lastName: 'top'
+            }
+        ]
+    });
+});
+
 app.get('/NWUI/index', (req, res) => {
     res.render('NWUI/index');
-})
+});
 
 
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-let port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log('Example app listening on port ' + port);
