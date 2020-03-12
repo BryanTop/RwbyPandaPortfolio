@@ -9,7 +9,6 @@ before_install:
   - docker build -t bryantop/rwbypandaportfolio .
   - docker run bryantop/rwbypandaportfolio
 deploy:
-  edge: true
   provider: heroku
-  api_key:
+   api_key:
     secure: "5f834651-0865-4613-9110-c948143ceaf0"
